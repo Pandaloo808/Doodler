@@ -6,7 +6,7 @@ function setup(){
 function preload(){
   classifier=ml5.imageClassifier('DoodleNet');
 }
-  function clearCanvas()
+  function clearCanvas(){
   background("white");
 }
 function draw(){
