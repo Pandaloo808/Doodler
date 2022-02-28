@@ -25,7 +25,7 @@ function gotResult(error,results){
   }
 console.log(results)
 document.getElementById('label').innerHTML='label:'+results[0].label;
-document.getElementById('confidence').innerHTML='confidence:'+Math.round(results:[0].confidence*100)+'%';
+document.getElementById('confidence').innerHTML='confidence:'+Math.round(results[0].confidence*100)+'%';
 utterThis=new SpeechSynthesisUtterance(results[0].label);
 synth.speak(utterThis);
 }
